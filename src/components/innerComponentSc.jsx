@@ -11,14 +11,12 @@ const ScBarComponent = (props) => {
             return {backgroundImage: `url(${require(`../database/data/${props.database}/${props.ele}.jpeg`)})`};
         }
     };
-    let backgroundColor = props.colors ? "black" : "initial";
     let sellerLineClass = props.colors ? "sellerLine dark" : "sellerLine";
     let offersClass = props.colors ? "offers dark" : "offers";
     let titlesClass="titles";
     const CheckPutEle=()=>{
         if(props.innerCont!=="sc1" && props.innerCont!=="sc2" && props.innerCont!=="sc6"){
             if(props.index!==0 && props.index!==props.size-1){
-                 backgroundColor = props.colors ? "black" : "initial";
                  sellerLineClass = props.colors ? "sellerLine1 dark" : "sellerLine1";
                  offersClass = props.colors ? "offers1 dark" : "offers1";
                  titlesClass="titles1";
